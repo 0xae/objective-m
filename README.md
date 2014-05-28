@@ -1,17 +1,12 @@
 objective-m
 ===========
 
-objective-m is an primitive implementation
-of the message-passing and object-oriented programming
+objective-m is a primitive implementation
+of message-passing and object-oriented programming
 pionered by smalltalk and Io.
-In other words, it means that everything (including conditionals and looping) is
+In other words, it means that everything
+(including conditionals and looping) is
 done through message-passing.
-
-ex:
-  
-
-Syntax
-=============
 
 
 Building up things
@@ -22,8 +17,19 @@ To build the shell run:
 
     cd src && make
     bin/objm
-  
-  
 
-[yourname =: [IO readline]]
-[Func ifelse: [yourname ==: @"ayrtoni"],[@"ayrtoni mentioned" println],{[@"Some dude " print];[yourname println]}]
+
+Example
+================
+Read something from the user,
+convert it to an atom,
+and doing some comparisons
+on it.
+
+    [yourname =: [IO readline]]
+    [Func ifelse: [yourname ==: @"ayrtoni"],
+                  [@"ayrtoni mentioned" println],
+                  {
+                    [@"Some dude " print];
+                    [yourname println]
+                  }]

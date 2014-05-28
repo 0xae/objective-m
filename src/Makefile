@@ -11,6 +11,8 @@ core: nobject nhandler nutils parser
 core-tests: test-atom test-list test-string
 clean:
 	rm *.o
+	rm $(TESTS)/*
+	rm $(BIN)/*
 
 
 ## core components
