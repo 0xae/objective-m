@@ -6,4 +6,6 @@
   * atoms  ===>  sequence of characters, excluding ([], {}, '' and "")
 
 ### Expressions
-  expr = [<expr> messageName:<<expr>>,<<expr2>>,...,<<exprn>>]
+  expr = [expr messageName:expr, expr2, ..., exprn]
+  
+
