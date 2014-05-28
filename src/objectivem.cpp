@@ -26,7 +26,6 @@ int main(int argc, char *argv[]){
   NObject *obj;
   locals["Runtime"] = new NObject();
   std::cout << "> ";
-  stringstream ss;
 
   while(getline(std::cin, line)){
     if(line == ""){
@@ -34,18 +33,8 @@ int main(int argc, char *argv[]){
       continue;
     }
 
-    ss << line;
-    if(lastc(line) != ';'){
-      continue;
-    }else if(lastc(line) == '\n'){
-      ss << ' ';
-      continue;
-    }
-    string toeval = ss.str();
-    ss = ss.clear();
-
     try{
-      obj = parseExpression(toeval, locals);
+      obj = parseExpression(line, locals);
       std::cout << "=> "
                 << obj->toString()
                 << std::endl;
