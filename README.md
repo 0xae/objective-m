@@ -11,7 +11,7 @@ done through message-passing.
 
 Building up things
 ===============
-objective-m is written in pure ISO C++, so
+objective-m is written in pure ISO C++0x, so
 it shall compile fine on unix/linux.
 To build the shell run:
 
