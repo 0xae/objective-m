@@ -1,7 +1,7 @@
 objective-m
 ===========
 
-objective-m is an unstable and buggy primitive implementation
+objective-m is an unstable and buggy and primitive implementation
 of message-passing and object-oriented programming
 pionered by smalltalk and Io.
 In other words, it means that everything
