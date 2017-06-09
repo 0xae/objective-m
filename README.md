@@ -24,7 +24,7 @@ Example
 Read something from the user,
 convert it to an atom,
 and doing some comparisons
-on it.
+with it.
 
     [yourname =: [IO readline]]
     [Func ifelse: [yourname ==: @"ayrtoni"],
